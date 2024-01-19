@@ -3,7 +3,7 @@
 }
 
 #view-all {
-    color: purple;
+    color: #464EE7;
 }
 
 .dropdown-item {
@@ -16,7 +16,7 @@
     color: #000000;
 }
 
-  .dropdown-item img {
+.dropdown-item img {
     display: block;
     height: 18px;
 }
@@ -89,4 +89,16 @@
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #464EE7;
     --bs-gradient: none;
+}
+
+#dropdown-hover {
+    color: #212528
+}
+
+#dropdown-hover:hover {
+    color:#464EE7
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: #FFFFFF;
 }
