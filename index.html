@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en" data-bs-theme="dark"> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briefley</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="./style.css" rel="stylesheet">
+</head>
+<header class="p-3 mb-3 border-bottom">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html"><img src="./assets/icon/logo.svg" id="logo"></a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="category">Категории</a>
+        <div class="dropdown">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Личностно развитие</a></li>
+            <li><a class="dropdown-item" href="#">Бизнес</a></li>
+            <li><a class="dropdown-item" href="#">Биографии</a></li>
+            <li><a class="dropdown-item" href="#">Психология</a></li>
+            <li><a class="dropdown-item" href="#">Наука</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" id="view-all" href="#">Виж всички</a></li>
+          </ul>
+        </div>
+        <li><a href="#" class="nav-link px-2 link-body-emphasis">Регистрирай се</a></li>
+        <li><a href="#" class="nav-link px-2 link-body-emphasis">Вход</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control" placeholder="Търсене" aria-label="Search">
+      </form>
+
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="/assets/user/user.svg" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item" href="#"><img src="./assets/icon/profile.svg" alt="icon">Моят профил</a></li>
+          <li><a class="dropdown-item" href="#"><img src="./assets/icon/wallet.svg" alt="icon">Абонамент</a></li>
+          <li><a class="dropdown-item" href="#"><img src="./assets/icon/payment method.svg" alt="icon">Начин на плащане</a></li>
+          <li><a class="dropdown-item" href="#"><img src="./assets/icon/history.svg" alt="icon">История на плащанията</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="exit" href="#"><img src="/assets/icon/logout.svg"  alt="icon">Изход</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<body>
+
+  <!-- Продукт -->
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center body-background">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Чуй най-важното от книгите за 20 минути</h1>
+      <h3 class="fw-normal text-muted mb-3">Чети и слушай резюмета на вдъхновяващи аудио книги от света на бизнеса, личностното развитие и психологията. Започни да пестиш от най-ценния ти ресурс - ВРЕМЕТО</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a href="https://apps.apple.com/us/app/briefley/id1539193713" target="_blank" tabIndex="0"><img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="bn45"/></a>      
+        <a href="https://play.google.com/store/apps/details?id=com.briefley.mobile" target="_blank" tabIndex="0"><img class="bn45" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="bn45"/></a>      
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+    <!-- Планове -->
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
+<!-- Книги -->
+<h2 class="display-6 text-center mb-4">Най-слушани</h2>
+<div class="container py-3">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Наука</strong>
+          <h3 class="mb-0">Тялото</h3>
+          <div class="mb-1 text-body-secondary">16 февруари 2023</div>
+          <p class="card-text mb-auto">Целият живот, с който разполагаме, прекарваме в телата, които природата е създала за нас.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Продължи да четеш
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        <img src="https://www.briefley.com/images/books/191/191-review-logo.jpg" width="200" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Личностно развитие, Психология</strong>
+          <h3 class="mb-0">Успехология</h3>
+          <div class="mb-1 text-body-secondary">10 април 2023</div>
+          <p class="mb-auto">Повишаването на личните стандарти е едно от най-важните неща към по-щастлив живот.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Продължи да четеш
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+         <img src="https://www.briefley.com/images/books/192/192-review-logo.jpg" width="200" height="250">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Втори ред -->
+  <h2 class="display-6 text-center mb-4">Най-нови</h2>
+  <div class="container py-3">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Личностно развитие, Психология</strong>
+            <h3 class="mb-0">Тялото</h3>
+            <div class="mb-1 text-body-secondary">17 април 2021</div>
+            <p class="card-text mb-auto">Животът е несигурен и не винаги оправдава очакванията ни. Не ни поднася благата си на тепсия и не ни чака...</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Продължи да четеш
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          <img src="https://www.briefley.com/images/books/92/92-review-logo.jpg" width="200" height="250">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Личностно развитие</strong>
+            <h3 class="mb-0">Успехология</h3>
+            <div class="mb-1 text-body-secondary">24 ноември 2020</div>
+            <p class="mb-auto">Рей Далио създава „Принципи“, за да помогне на всички дръзки умове, които мислят самостоятелно и които искат да организират...</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Продължи да четеш
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+           <img src="https://www.briefley.com/images/books/60/60-review-logo.jpg" width="200" height="250">
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--Край на книги-->
+
+  <!-- Нашите партньори-->
+
+  <div class="partners" style="text-align: center;">
+    <h2 class="display-6 text-center mb-4">Нашите партньори</h2>
+    <img src="./assets/partners/soft-uni.svg" alt="SoftUni" width="166" height="40" style="display: block; margin-left: auto; margin-right: auto;">
+  </div>  
+
+  <!-- Край на нашите партньори-->
+  <h2 class="display-6 text-center mb-4" id="plans-padding">Планове</h2>
+    <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Безплатен</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">0 лв<small class="text-body-secondary fw-light">/месец</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Безплатна регистрация</li>
+              <li>Ограничен достъп</li>
+              <li>Лимитирани функционалности</li>
+              <li>(Възможност за надстройване)</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Регистрирай се напълно безплатно</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Месечен</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">9,99 лв<small class="text-body-secondary fw-light">/месец</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Таксува се месечно,</li>
+              <li>може да се откажете</li>
+              <li>по всяко време</li>
+              <li>(без пробен период)</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Абонирай се за месечен абонамент</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Годишен</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">4,99 лв<small class="text-body-secondary fw-light">/месец</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Таксува се годишно,</li>
+              <li>може да се откажете</li>
+              <li>по всяко време</li>
+              <li>(7-дневен тест период)</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Абонирай се за годишен абонамент</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="display-6 text-center mb-4">Сравни плановете</h2>
+
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Безплатен</th>
+            <th style="width: 22%;">Месечен</th>
+            <th style="width: 22%;">Годишен</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Слушай 90 секунди</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Води си бележки</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Добавяй в любими</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Чети неограничено</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Слушай неограничено</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">50% отстъпка от стойността на плана</th>
+            <td></td>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+<!-- Начало на футър -->
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="./assets/icon/logo.svg" alt="logo">
+        <small class="d-block mb-3 text-body-secondary">© 2019–2024</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Социални мрежи</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Instagram</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">YouTube</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">TikTok</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Полезни връзки</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Връзка с нас</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Общи условия</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Политика за поверителност</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>За нас</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Брийфли ЕООД © <br/> Всички права запазени</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+
+<deepl-input-controller></deepl-input-controller></body>
+</body>
+</html>
