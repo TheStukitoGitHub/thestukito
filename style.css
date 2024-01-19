@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-  }
+}
 
 #category {
     color: #000000;
@@ -19,7 +19,7 @@
   .dropdown-item img {
     display: block;
     height: 18px;
-  }
+}
 
 #logo {
     padding-right: 10px;
@@ -27,16 +27,24 @@
 .bn46 {
     width: 150px;
     height: 50px;
-  }
+}
 
 .bn45 {
     width: 170px;
     height: 50px;
-  }
+}
 
 .body-background {
    background-color: #F9F9F9;
-  }
+}
+
+#top-bg-image {
+    background-image: url('./assets/banners/banner.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 0%!important;
+    background-color: #EEF5FF;
+}
 
 #plans-padding {
     padding-top: 80px;
